@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frecuencia Joven | Podcast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <div class="logo">🎙️ FRECUENCIA JOVEN</div>
+        <p>Las noticias que conectan contigo</p>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#noticias">Noticias</a>
+            <a href="#acerca">Acerca del podcast</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="portada" id="inicio">
+            <span class="etiqueta">PODCAST ESCOLAR</span>
+            <h1>Tu mundo, en tres noticias.</h1>
+            <p>
+                Actualidad, tecnología y entretenimiento.
+                Ponte los audífonos y escucha lo que está pasando.
+            </p>
+            <a class="boton" href="#noticias">Escuchar noticias ↓</a>
+        </section>
+
+        <section id="noticias" class="seccion">
+            <h2>📻 Nuestras noticias</h2>
+            <p class="subtitulo">
+                Tres temas, tres historias y una sola frecuencia.
+            </p>
+
+            <div class="navegacion-noticias">
+                <button onclick="cambiarNoticia(0)">01 · Tlaxcala</button>
+                <button onclick="cambiarNoticia(1)">02 · Tecnología</button>
+                <button onclick="cambiarNoticia(2)">03 · BTS</button>
+            </div>
+
+            <!-- FRAME / NOTICIA 1 -->
+            <article class="frame noticia activa" id="noticia0">
+                <div class="numero">NOTICIA 01 / CULTURA</div>
+                <div class="icono">🎡</div>
+                <h3>La Feria de Tlaxcala 2026</h3>
+                <p class="fecha">Octubre - Noviembre de 2026</p>
+
+                <p>
+                    Tlaxcala se prepara para celebrar una nueva edición
+                    de su tradicional Feria de Ferias. Del 22 de octubre
+                    al 16 de noviembre, el evento ofrecerá más de 400
+                    actividades culturales, artísticas, deportivas,
+                    gastronómicas y de entretenimiento.
+                </p>
+
+                <p>
+                    Entre sus atractivos se encuentran los espectáculos
+                    musicales, las exposiciones artesanales, la comida
+                    tradicional y las actividades para disfrutar en familia.
+                    También se estrenarán espacios renovados en el recinto
+                    ferial.
+                </p>
+
+                <p>
+                    Esta celebración representa una oportunidad para
+                    conocer las tradiciones de Tlaxcala y apoyar a los
+                    comerciantes y productores de la región.
+                </p>
+
+                <div class="dato">
+                    <strong>Dato destacado:</strong>
+                    la feria se realizará del 22 de octubre al
+                    16 de noviembre de 2026.
+                </div>
+
+                <label for="audio1">🎧 Audio de la noticia</label>
+                <audio id="audio1" controls preload="none">
+                    <source src="audio-feria.mp3" type="audio/mpeg">
+                    Tu navegador no puede reproducir este audio.
+                </audio>
+
+                <a class="fuente"
+                   href="https://comunicacion.tlaxcala.gob.mx/"
+                   target="_blank" rel="noopener noreferrer">
+                    Consultar fuente oficial ↗
+                </a>
+            </article>
+
+            <!-- FRAME / NOTICIA 2 -->
+            <article class="frame noticia" id="noticia1">
+                <div class="numero">NOTICIA 02 / TECNOLOGÍA</div>
+                <div class="icono">🤖</div>
+                <h3>Un robot hecho en la escuela</h3>
+                <p class="fecha">Proyecto estudiantil</p>
+
+                <p>
+                    En nuestra escuela estamos trabajando en un proyecto
+                    tecnológico: construir un robot. Este trabajo nos permite
+                    poner en práctica nuestra creatividad, aprender sobre
+                    electrónica y comprender cómo funcionan los mecanismos
+                    y los sistemas de control.
+                </p>
+
+                <p>
+                    Durante el desarrollo del proyecto es importante
+                    planear el diseño, seleccionar los materiales,
+                    organizar las tareas y realizar pruebas para comprobar
+                    que el robot funcione correctamente.
+                </p>
+
+                <p>
+                    Además de aprender tecnología, este proyecto fomenta
+                    el trabajo en equipo, la resolución de problemas
+                    y la imaginación. ¡Próximamente podremos conocer
+                    los resultados de nuestro robot!
+                </p>
+
+                <div class="dato">
+                    <strong>En desarrollo:</strong>
+                    el diseño, los materiales y las funciones finales
+                    dependerán del proyecto de nuestro equipo.
+                </div>
+
+                <label for="audio2">🎧 Audio de la noticia</label>
+                <audio id="audio2" controls preload="none">
+                    <source src="audio-robot.mp3" type="audio/mpeg">
+                    Tu navegador no puede reproducir este audio.
+                </audio>
+
+                <p class="nota">
+                    Esta noticia es una presentación del proyecto escolar,
+                    no un reporte de un robot ya terminado.
+                </p>
+            </article>
+
+            <!-- FRAME / NOTICIA 3 -->
+            <article class="frame noticia" id="noticia2">
+                <div class="numero">NOTICIA 03 / ENTRETENIMIENTO</div>
+                <div class="icono">🎤</div>
+                <h3>Claudia Sheinbaum recibe a BTS en México</h3>
+                <p class="fecha">6 de mayo de 2026</p>
+
+                <p>
+                    Una noticia que emocionó a miles de fans mexicanos
+                    fue la visita del grupo surcoreano BTS a Palacio
+                    Nacional, donde fue recibido por la presidenta
+                    Claudia Sheinbaum.
+                </p>
+
+                <p>
+                    Los integrantes de BTS saludaron desde un balcón
+                    a sus seguidores reunidos en el Zócalo de la Ciudad
+                    de México. De acuerdo con información oficial,
+                    cerca de 50 mil personas acudieron para ver al grupo.
+                </p>
+
+                <p>
+                    El encuentro llamó la atención por la popularidad
+                    internacional de BTS y por el entusiasmo de ARMY,
+                    nombre con el que se conoce a su comunidad de fans.
+                    La música volvió a demostrar su capacidad para reunir
+                    a personas de diferentes culturas.
+                </p>
+
+                <div class="dato">
+                    <strong>Dato destacado:</strong>
+                    la recepción ocurrió en Palacio Nacional
+                    el 6 de mayo de 2026.
+                </div>
+
+                <label for="audio3">🎧 Audio de la noticia</label>
+                <audio id="audio3" controls preload="none">
+                    <source src="audio-bts.mp3" type="audio/mpeg">
+                    Tu navegador no puede reproducir este audio.
+                </audio>
+
+                <a class="fuente"
+                   href="https://www.gob.mx/presidencia/prensa/la-musica-y-los-valores-unen-a-mexico-y-corea-del-sur-presidenta-sheinbaum-recibe-a-bts-en-palacio-nacional"
+                   target="_blank" rel="noopener noreferrer">
+                    Leer noticia oficial ↗
+                </a>
+            </article>
+
+            <div class="controles">
+                <button class="boton-secundario" onclick="anterior()">
+                    ← Anterior
+                </button>
+                <span id="contador">1 / 3</span>
+                <button class="boton-secundario" onclick="siguiente()">
+                    Siguiente →
+                </button>
+            </div>
+        </section>
+
+        <section class="acerca frame" id="acerca">
+            <div class="icono">🎙️</div>
+            <h2>¿Qué es Frecuencia Joven?</h2>
+            <p>
+                Somos un espacio de podcast escolar donde compartimos
+                noticias, proyectos e información interesante para
+                nuestra comunidad.
+            </p>
+            <p>
+                Nuestro objetivo es informar, aprender y comunicar
+                de una forma creativa y entretenida.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Frecuencia Joven · Podcast escolar</p>
+        <p>Información, creatividad y tecnología.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
